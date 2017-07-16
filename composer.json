@@ -1,0 +1,22 @@
+{
+	"name": "spacedmonkey/spacedmonkey-theme",
+	"description": "The theme used for Spacedmonkey.com",
+	"homepage": "https://github.com/spacedmonkey/spacedmonkey-theme",
+	"version": "1.0.0",
+	"keywords": [
+		"wordpress"
+	],
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name":"Jonathan Harris",
+			"email":"jon@spacedmonkey.co.uk",
+			"homepage":"http://www.spacedmonkey.co.uk"
+		}
+	],
+	"type": "wordpress-theme",
+	"require": {
+		"composer/installers": "~1.0"
+	 }
+}
+

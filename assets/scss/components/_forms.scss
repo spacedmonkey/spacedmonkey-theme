@@ -1,0 +1,51 @@
+// Search form
+.post-password-form{
+  @extend .form-inline;
+   label {
+     @extend .form-group;
+     font-weight: normal;
+   }
+   input[type=password]{
+     @extend .form-control;
+   }
+  input[type=submit]{
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}
+.search-form{
+  .search-field{
+    height: 33px;
+  }
+}
+.wpcf7-form {
+  .wpcf7-form-control-wrap {
+    textarea,
+    input[type=text],
+    input[type=url],
+    input[type=number],
+    input[type=email] {
+      @extend .form-control;
+      @extend .input-lg;
+      width: 100%;
+    }
+  }
+  .wpcf7-submit,
+    button,
+    input[type=submit],
+    input[type=button] {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+
+  .wpcf7-response-output{
+    @extend .alert;
+    &.wpcf7-validation-errors{
+      @extend .alert-danger;
+    }
+    &.wpcf7-mail-sent-ng{
+      @extend .alert-info;
+    }
+  }
+}

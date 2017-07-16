@@ -1,0 +1,32 @@
+// Posts
+.cat-links, .tags-links{
+  a{
+    @extend .label;
+    @extend .label-default;
+  }
+}
+
+.entry-meta{
+  padding: 0px 0px $padding-large-vertical;
+}
+.entry-content{
+  padding: $padding-large-vertical 0px;
+}
+.entry-footer{
+  padding: $padding-large-vertical 0px;
+}
+body.infinite-scroll {
+  .navigation.pagination{
+    display: none;
+  }
+  .infinite-loader,
+  #infinite-handle{
+    padding: 30px 0px;
+    text-align: center;
+    span{
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-lg;
+    }
+  }
+}
