@@ -62,12 +62,14 @@ html,body,.site{
     font-size: 3.2em;
   }
   .navbar-toggle {
-      border: 0px none;
-      border-radius: 0px;
-      padding: 13px;
-      margin: 15px 15px 15px 0px;
+    border: 1px solid white;
+    border-radius: 0px;
+    padding: 13px;
+    margin: 15px 15px 15px 0px;
+    .icon-bar {
+      background-color: white;
+    }
   }
-
    li > a{
     color: white;
     margin: 20px 10px;

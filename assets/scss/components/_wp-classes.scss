@@ -15,9 +15,17 @@
   height: auto;
 }
 
+.alignleft{
+  @extend .pull-left;
+  margin-right: $padding-large-vertical;
+}
+.alignright{
+  @extend .pull-right;
+  margin-left: $padding-large-vertical;
+}
 .alignleft,
 .alignright {
-
+  margin-bottom: $padding-large-vertical;
   height: auto;
 }
 

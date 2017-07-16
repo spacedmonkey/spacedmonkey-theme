@@ -16,15 +16,19 @@
       return false;
     });
 
+    $("#main-nav .navbar-toggle").click(function(){
+        navigationFixedClass = 'scrolled-nav';
+        $navigation.toggleClass( navigationFixedClass );
+    });
+
     function adjustScrollClass() {
       navigationFixedClass = 'scrolled-nav';
-      /**topValue = ($( window ).scrollTop() * .4);**/
       if ( $( window ).scrollTop() >= navigationOuterHeight ) {
-					$navigation.addClass( navigationFixedClass );
-				} else {
-					$navigation.removeClass( navigationFixedClass );
-				}
-        /**$("#background-header").css("background-position", "center "+topValue+"px" );**/
+        $navigation.addClass( navigationFixedClass );
+        } else {
+            $navigation.removeClass( navigationFixedClass );
+        }
+
     }
     function setNavProps(){
       $navigation = $("#main-nav");
