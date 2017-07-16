@@ -11,12 +11,14 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
     <header class="header-page">
-        <div class="container">
+        <div class="header-page-inside">
+            <div class="container">
 
-            <h1><?php
-				spacedmonkey_post_type_title();
-				?></h1>
-        </div>
+                <h1><?php
+                    spacedmonkey_post_type_title();
+                    ?></h1>
+            </div>
+        </div><!-- .page-header -->
     </header><!-- .page-header -->
 <?php endif; ?>
     <main id="main" class="site-main container">

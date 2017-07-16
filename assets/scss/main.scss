@@ -102,8 +102,8 @@ html,body,.site{
   //background-image: url("../img/background1.jpg");
 }
 .header-page{
-  padding: 100px 0px;
-  text-align: center;
+
+
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: fixed;
@@ -111,7 +111,14 @@ html,body,.site{
   -moz-background-size: cover;
   background-size: cover;
  // background-image: url("../img/background1.jpg");
-  margin: 71px 0px 0px;
+
+  .header-page-inside{
+    margin: 71px 0px 0px;
+    text-align: center;
+    padding: 100px 0px;
+    background: rgba(255,255,255,0.4);
+    color: black;
+  }
 }
 .intro-inside{
   display: table-cell;

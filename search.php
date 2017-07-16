@@ -13,12 +13,14 @@ get_header(); ?>
 
 
         <header class="header-page">
-            <div class="container">
-                <h1 class="page-title"><?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'spacedmonkey' ), '<span>' . get_search_query() . '</span>' );
-					?></h1>
-            </div>
+            <div class="header-page-inside">
+                <div class="container">
+                    <h1 class="page-title"><?php
+                        /* translators: %s: search query. */
+                        printf( esc_html__( 'Search Results for: %s', 'spacedmonkey' ), '<span>' . get_search_query() . '</span>' );
+                        ?></h1>
+                </div>
+            </div><!-- .page-header -->
         </header><!-- .page-header -->
         <main id="main" class="site-main container">
             <div class="row">

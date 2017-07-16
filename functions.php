@@ -197,6 +197,11 @@ function get_the_archive_title_filter( $title ) {
 
 add_filter( 'get_the_archive_title', 'get_the_archive_title_filter' );
 
+function spacedmonkey_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'spacedmonkey_excerpt_length', 999 );
+
 /**
  * Implement the Custom Header feature.
  */

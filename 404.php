@@ -14,9 +14,11 @@ get_header(); ?>
 
 
 		<header class="header-page">
-			<div class="container">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'spacedmonkey' ); ?></h1>
-            </div>
+            <div class="header-page-inside">
+                <div class="container">
+                        <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'spacedmonkey' ); ?></h1>
+                </div>
+            </div><!-- .page-header -->
         </header><!-- .page-header -->
 		<main id="main" class="site-main container">
 			<section class="error-404 not-found">

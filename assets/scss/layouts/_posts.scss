@@ -30,3 +30,17 @@ body.infinite-scroll {
     }
   }
 }
+
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .every-2{
+      clear: both;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .every-3{
+      clear: both;
+    }
+  }
+.every-4{}

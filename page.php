@@ -17,12 +17,14 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
     <header class="header-page">
-        <div class="container">
+        <div class="header-page-inside">
+            <div class="container">
 
-			<?php
-			the_title( '<h1 class="page-title">', '</h1>' );
-			?>
-        </div>
+                <?php
+                the_title( '<h1 class="page-title">', '</h1>' );
+                ?>
+            </div>
+        </div><!-- .page-header -->
     </header><!-- .page-header -->
 <?php endif; ?>
 
