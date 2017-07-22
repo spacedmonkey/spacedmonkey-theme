@@ -36,6 +36,12 @@ html,body,.site{
 #main-nav.navbar-fixed-background{
   background: white;
   border-bottom-width: 1px;
+  .navbar-toggle{
+    border-color: black;
+    .icon-bar{
+      background-color: black;
+    }
+  }
   a{
     color: black;
   }

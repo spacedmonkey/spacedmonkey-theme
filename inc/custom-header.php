@@ -97,7 +97,7 @@ function add_image_header() {
 		?>
             <style type="text/css">
                 .header-page{
-                    background-image: url("<?php  echo get_the_post_thumbnail_url($page);?>");
+                    background-image: url("<?php  echo get_the_post_thumbnail_url( $page, 'spacedmonkey-banner' );?>");
                 }
             </style>
         <?php

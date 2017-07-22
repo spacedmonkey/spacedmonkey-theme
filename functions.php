@@ -81,6 +81,8 @@ function spacedmonkey_setup() {
 		'flex-height' => true,
 	) );
 
+	add_image_size( 'spacedmonkey-banner', 1920, 270, true );
+
 }
 endif;
 add_action( 'after_setup_theme', 'spacedmonkey_setup' );
@@ -237,4 +239,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Load Echo lazy load compatibility file.
+ */
+require get_template_directory() . '/inc/echo-lazy-load.php';
+
+/**
+ * Add walker for icon nav
+ */
 require get_template_directory() . '/inc/icons-nav.php';
