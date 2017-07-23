@@ -17,8 +17,7 @@
     });
 
     $("#main-nav .navbar-toggle").click(function(){
-        navigationFixedClass = 'scrolled-nav';
-        $navigation.toggleClass( navigationFixedClass );
+        $navigation.toggleClass( 'navbar-fixed-background' );
     });
 
     function adjustScrollClass() {
