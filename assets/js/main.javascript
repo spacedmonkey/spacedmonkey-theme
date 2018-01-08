@@ -17,16 +17,18 @@
     });
 
     $("#main-nav .navbar-toggle").click(function(){
-        $navigation.toggleClass( 'navbar-fixed-background' );
+        if ( !$navigation.hasClass( "scrolled-nav" ) ) {
+            $navigation.toggleClass( 'navbar-fixed-background' );
+        }
     });
 
     function adjustScrollClass() {
       navigationFixedClass = 'scrolled-nav';
       if ( $( window ).scrollTop() >= navigationOuterHeight ) {
         $navigation.addClass( navigationFixedClass );
-        } else {
+      } else {
             $navigation.removeClass( navigationFixedClass );
-        }
+      }
 
     }
     function setNavProps(){
