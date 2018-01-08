@@ -24,7 +24,7 @@ get_header(); ?>
     <main id="main" class="site-main container">
         <div class="row">
 
-			<?php $cols = ( is_active_sidebar( 'sidebar-1' ) ) ? 'col-xs-12 col-md-8' : 'col-xs-12'; ?>
+			<?php $cols = ( is_active_sidebar( 'sidebar-1' ) ) ? 'col-xs-12 col-md-8' : 'col-md-10  col-md-offset-1 col-xs-12'; ?>
             <div id="primary" class="content-area <?php echo $cols; ?>">
 
 
