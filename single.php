@@ -14,7 +14,7 @@ get_header(); ?>
         <div class="header-page-inside">
             <div class="container">
 
-                <h1><?php
+                <h1 class="sr-only"><?php
                     spacedmonkey_post_type_title();
                     ?></h1>
             </div>
