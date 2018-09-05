@@ -20,6 +20,13 @@
   p{
     margin: 0px 0px 1em;
   }
+  .jetpack-video-wrapper{
+    @extend .embed-responsive;
+    @extend .embed-responsive-16by9;
+    iframe, embed, object{
+      @extend .embed-responsive-item;
+    }
+  }
 }
 .entry-footer{
   padding: $padding-large-vertical 0px;
