@@ -25,6 +25,8 @@
     @extend .embed-responsive-16by9;
     iframe, embed, object{
       @extend .embed-responsive-item;
+      height: auto !important;
+      width: auto !important;
     }
   }
 }
