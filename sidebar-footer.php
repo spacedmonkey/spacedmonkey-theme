@@ -7,18 +7,21 @@
  * @package spacedmonkey
  */
 
-if ( ! is_active_sidebar( 'sidebar-footer' ) && ! is_active_sidebar( 'sidebar-footer-secondary' ) ) {
-	return;
-}
+	if ( is_active_sidebar( 'sidebar-footer' ) ) {
 ?>
-<div id="footer-1">
-	<div class="container">
-		<?php dynamic_sidebar( 'sidebar-footer' ); ?>
-	</div>
-</div>
-
-<div class="site-info" id="footer-2">
-	<div class="container">
-		<?php dynamic_sidebar( 'sidebar-footer-secondary' ); ?>
-	</div>
-</div>
+		<div id="footer-1">
+			<div class="container">
+				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+			</div>
+		</div>
+<?php
+	}
+	if( is_active_sidebar( 'sidebar-footer-secondary' ) ) {
+?>
+		<div class="site-info" id="footer-2">
+			<div class="container">
+				<?php dynamic_sidebar( 'sidebar-footer-secondary' ); ?>
+			</div>
+		</div>
+	<?php
+}
