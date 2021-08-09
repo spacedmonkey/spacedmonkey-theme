@@ -110,7 +110,7 @@ function spacedmonkey_widgets_init() {
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'spacedmonkey' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div></section>',
+		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
