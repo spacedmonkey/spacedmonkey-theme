@@ -139,7 +139,7 @@ function spacedmonkey_widgets_init() {
 		'name'          => esc_html__( 'Footer Sidebar secondary', 'spacedmonkey' ),
 		'id'            => 'sidebar-footer-secondary',
 		'description'   => esc_html__( 'Add widgets here.', 'spacedmonkey' ),
-		'before_widget' => '<aside id="%1$s" class="widget col-xs-12 col-sm-6 col-md-3 %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h5 class="widget-title">',
 		'after_title'   => '</h5>',
