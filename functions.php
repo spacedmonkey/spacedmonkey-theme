@@ -151,9 +151,9 @@ add_action( 'widgets_init', 'spacedmonkey_widgets_init' );
  * Enqueue scripts and styles.
  */
 function spacedmonkey_scripts() {
-	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/css/main.css' ) );
+	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/theme.css' ) );
 
-	wp_enqueue_script( 'spacedmonkey-scripts', get_theme_file_uri( 'assets/js/scripts.min.js' ), array('jquery'), filemtime(get_theme_file_path('assets/js/scripts.min.js')), true );
+	wp_enqueue_script( 'spacedmonkey-scripts', get_theme_file_uri( 'assets/theme.js' ), array('jquery'), filemtime(get_theme_file_path('assets/js/scripts.min.js')), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
