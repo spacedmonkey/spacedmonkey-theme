@@ -36,7 +36,7 @@
     "flexslider": "~2.5.0",
     "font-awesome": "^4.7.0",
     "foundation-sites": "~5.5.3",
-    "video.js": "^5.10.1",
+    "video.js": ">=7.14.3",
     "wowjs": "~1.1.2"
   }
 }
