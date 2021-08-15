@@ -160,7 +160,7 @@ function spacedmonkey_scripts() {
 
 	$asset['dependencies'][] = 'jquery';
 
-	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/theme.css' ), $asset['dependencies'], $asset['version'] );
+	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/theme.css' ), array(), $asset['version'] );
 	wp_enqueue_script( 'spacedmonkey-scripts', get_theme_file_uri( 'assets/theme.js' ), $asset['dependencies'], $asset['version'], true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
