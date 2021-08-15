@@ -161,28 +161,6 @@ function spacedmonkey_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'spacedmonkey_scripts' );
 
-/**
- * mullenlowe_embed_html
- *
- * Wrap oembed objects with a responsive container
- *
- * @author Jonathan Harris
- *
- * @param  string $html
- * @param  string $url
- * @param  array $attr
- * @param  int $post_ID
- *
- * @return string $return
- */
-function spacedmonkey_embed_html( $html, $url, $attr, $post_ID ) {
-
-	$return  = '<div class="o-container embed-responsive embed-responsive-16by9">' . $html . '</div>';
-
-	return $return;
-}
-
-add_filter( 'embed_oembed_html', 'spacedmonkey_embed_html', 10, 4 );
 
 function testing($current){
 	$current = str_replace("<div", "<li", $current);
