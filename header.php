@@ -53,11 +53,6 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-	<?php if ( is_front_page() ): ?>
-        <div id="background-header" class="intro">
-			<?php get_sidebar( 'home' ); ?>
-        </div>
-	<?php endif; ?>
 
 
     <div id="content" class="site-content">

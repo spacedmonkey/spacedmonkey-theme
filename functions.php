@@ -151,16 +151,6 @@ function spacedmonkey_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Home Sidebar', 'spacedmonkey' ),
-		'id'            => 'sidebar-home',
-		'description'   => esc_html__( 'Add widgets here.', 'spacedmonkey' ),
-		'before_widget' => '<div id="%1$s" class="widget intro-inside %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-
-	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Sidebar primary', 'spacedmonkey' ),
 		'id'            => 'sidebar-footer',
 		'description'   => esc_html__( 'Add widgets here.', 'spacedmonkey' ),
