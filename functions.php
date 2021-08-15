@@ -153,9 +153,15 @@ add_action( 'widgets_init', 'spacedmonkey_widgets_init' );
  * Enqueue scripts and styles.
  */
 function spacedmonkey_scripts() {
-	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/theme.css' ) );
+	$asset_file            = get_theme_file_path( 'assets/theme.asset.php' );
+	$asset                 = is_readable( $asset_file ) ? require $asset_file : array();
+	$asset['dependencies'] = isset( $asset['dependencies'] ) ? $asset['dependencies'] : array();
+	$asset['version']      = isset( $asset['version'] ) ? $asset['version'] : null;
 
-	wp_enqueue_script( 'spacedmonkey-scripts', get_theme_file_uri( 'assets/theme.js' ), array( 'jquery' ), filemtime( get_theme_file_path( 'assets/theme.js' ) ), true );
+	$asset['dependencies'][] = 'jquery';
+
+	wp_enqueue_style( 'spacedmonkey-style', get_theme_file_uri( 'assets/theme.css' ), $asset['dependencies'], $asset['version'] );
+	wp_enqueue_script( 'spacedmonkey-scripts', get_theme_file_uri( 'assets/theme.js' ), $asset['dependencies'], $asset['version'], true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

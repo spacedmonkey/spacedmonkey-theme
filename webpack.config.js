@@ -16,9 +16,9 @@ module.exports = {
 			'./src/navigation.js',
 			'./src/plugins.js',
 			'./src/skip-link-focus-fix.js',
-      './src/theme.js',
-      './src/scss/main.scss',
-    ]
+		    './src/theme.js',
+		    './src/scss/main.scss',
+		]
 	},
 	output: {
 		...defaultConfig.output,
