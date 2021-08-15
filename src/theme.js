@@ -1,8 +1,3 @@
-/**
- * Internal dependencies
- */
-import './scss/main.scss';
-
 (function( $ ) {
     setNavProps();
   // On scroll, we want to stick/unstick the navigation.

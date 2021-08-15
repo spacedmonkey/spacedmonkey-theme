@@ -12,7 +12,13 @@ const path = require( 'path' );
 module.exports = {
 	...defaultConfig,
 	entry: {
-		theme: path.resolve(process.cwd(), 'src', 'theme.js'),
+		theme: [
+			'./src/navigation.js',
+			'./src/plugins.js',
+			'./src/skip-link-focus-fix.js',
+      './src/theme.js',
+      './src/scss/main.scss',
+    ]
 	},
 	output: {
 		...defaultConfig.output,
