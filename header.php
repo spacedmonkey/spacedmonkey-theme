@@ -23,11 +23,8 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text"
-       href="#content"><?php esc_html_e( 'Skip to content', 'spacedmonkey' ); ?></a>
-
-	<?php $nav_class = ( is_front_page() ) ? 'navbar-fixed-top' : 'navbar-fixed-top navbar-fixed-background'; ?>
-    <nav id="main-nav" class="navbar navbar-default <?php echo $nav_class; ?>">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'spacedmonkey' ); ?></a>
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
