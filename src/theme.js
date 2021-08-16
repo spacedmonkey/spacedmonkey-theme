@@ -20,6 +20,8 @@
         if ( !$navigation.hasClass( "scrolled-nav" ) ) {
             $navigation.toggleClass( 'navbar-fixed-background' );
         }
+	$navbar.toggleClass( 'collapse' );    
+	$( this ).attr('aria-expanded', ! $( this ).attr('aria-expanded') );    
     });
 
     function adjustScrollClass() {
@@ -33,6 +35,7 @@
     }
     function setNavProps(){
       $navigation = $("#main-nav");
+      $navbar = $("#navbar");    
       navigationHeight      = $navigation.height();
   		navigationOuterHeight = $navigation.outerHeight();
     }
