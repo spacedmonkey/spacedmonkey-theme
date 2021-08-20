@@ -21,7 +21,7 @@
             $navigation.toggleClass( 'navbar-fixed-background' );
         }
 	$navbar.toggleClass( 'collapse' );    
-	$( this ).attr('aria-expanded', ! $( this ).attr('aria-expanded') );    
+	$( this ).attr('aria-expanded', !JSON.parse( $( this ).attr('aria-expanded') ) );    
     });
 
     function adjustScrollClass() {
