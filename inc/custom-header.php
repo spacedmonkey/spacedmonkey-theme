@@ -94,10 +94,17 @@ function add_image_header() {
 
 
 	if ( $page && has_post_thumbnail( $page ) ) {
+		$post_thumbnail_id = get_post_thumbnail_id( $page );
+		$data = wp_get_attachment_metadata( $post_thumbnail_id );
+		$colour = '';
+		if( is_array($data) && isset( $data['dominant_color'] ) && isset( $data['has_transparency'] )){
+			$color = ! $data['has_transparency'] ? '#' . $data['dominant_color'] : '';
+		}
 		?>
             <style type="text/css">
                 .header-page{
                     background-image: url("<?php  echo get_the_post_thumbnail_url( $page, 'spacedmonkey-banner' );?>");
+										<?php echo $color ? 'background-color: ' . $color : '';?>
                 }
             </style>
         <?php
